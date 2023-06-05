@@ -10,8 +10,14 @@ function StartGameScreen() {
         autoCapitalize="none"
         autoCorrect={false}
       />
-      <PrimaryButton>Reset</PrimaryButton>
-      <PrimaryButton>Confirm</PrimaryButton>
+      <View style={styles.buttonsContainer}>
+        <View style={styles.buttonContainer}>
+        <PrimaryButton>Reset</PrimaryButton>
+        </View>
+        <View style={styles.buttonContainer}>
+        <PrimaryButton>Confirm</PrimaryButton>
+        </View>
+      </View>
     </View>
   );
 }
@@ -20,6 +26,8 @@ export default StartGameScreen;
 // caja de estilos para poner Sombra
 const styles = StyleSheet.create({
   inputContainer: {
+    justifyContent:"center",
+    alignItems:"center",
     padding: 16,
     marginTop: 100,
     backgroundColor: "#4e0329",
@@ -33,6 +41,7 @@ const styles = StyleSheet.create({
     },
     shadowRadius: 6,
     shadowOpacity: 0.2,
+
   },
   numberInput: {
     height: 50,
@@ -45,4 +54,10 @@ const styles = StyleSheet.create({
     width: 50,
     textAlign: "center",
   },
+  buttonsContainer:{
+    flexDirection:"row"
+  },
+  buttonContainer:{
+    flex:1
+  }
 });
