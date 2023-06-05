@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "RNCourse",
-    "slug": "RNCourse",
+    "slug": "learnreact",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -27,6 +27,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ea78d577-fba4-412f-8f51-45071568f5a2"
+      }
+    },
+    "owner": "betanconorman"
   }
 }
